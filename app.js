@@ -3,13 +3,13 @@ var app = angular.module('LoginApp', ["ngRoute"]);
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
-            templateURL: "login.html"
+            templateUrl : "login.html"
         })
         .when("/CreateNewClaim", {
-            templateURL: "createNewClaim.html"
+            templateUrl : "createNewClaim.html"
         })
         .otherwise({
-            templateURL: "login.html"
+            templateUrl : "login.html"
         });
 
 });
