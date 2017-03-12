@@ -6,7 +6,7 @@ app.config(function ($routeProvider) {
             templateURL: "login.html"
         })
         .when("/CreateNewClaim", {
-            templateURL: "CreateNewClaim.html"
+            templateURL: "createNewClaim.html"
         })
         .otherwise({
             templateURL: "login.html"
