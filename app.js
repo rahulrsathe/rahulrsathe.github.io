@@ -2,9 +2,9 @@ var app = angular.module('LoginApp', ['ngRoute']);
 
 app.config(function ($routeProvider) {
     $routeProvider
-        .when("/", {
-            templateUrl : "login.html"
-        })
+       // .when("/", {
+       //     templateUrl : "login.html"
+       // })
         .when("/CreateNewClaim", {
             templateUrl : "createNewClaim.html"
         })
