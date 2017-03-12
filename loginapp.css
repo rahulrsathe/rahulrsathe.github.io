@@ -21,3 +21,6 @@ p
 {
     text-align : center;
 }
+.errMsg{
+        color:red;
+}
