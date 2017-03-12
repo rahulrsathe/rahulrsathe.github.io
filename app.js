@@ -11,7 +11,6 @@ app.config(function ($routeProvider) {
         .otherwise({
             templateUrl : "login.html"
         });
-
 });
 
 app.controller('LoginCntrlr', function ($scope) {
@@ -35,4 +34,3 @@ app.controller('LoginCntrlr', function ($scope) {
     }
 
 });
-
