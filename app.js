@@ -1,11 +1,10 @@
-var app = angular.module('LoginApp', ['']);
+var app = angular.module('LoginApp', []);
 app.controller('LoginCntrlr', function ($scope) {
  
     $scope.validatepwd = function() {
         if ($scope.pwd == 'boom') {
             $scope.pwd = "";
             $scope.alertMsg = "Good Work remembering your password!";
-             
         }
 
         else {
