@@ -1,7 +1,7 @@
 var app = angular.module('LoginApp', ["ngRoute"]);
 app.controller('LoginCntrlr', function ($scope) {
- 
-    $scope.validatepwd = function() {
+
+    $scope.validatepwd = function () {
         if ($scope.pwd == 'boom') {
             $scope.pwd = "";
             $scope.alertMsg = "Good Work remembering your password!";
@@ -13,14 +13,14 @@ app.controller('LoginCntrlr', function ($scope) {
         }
     }
 
-    $scope.reset = function() {
-            $scope.pwd = "";
-            $scope.alertMsg = "";
-            $scope.username = "";
+    $scope.reset = function () {
+        $scope.pwd = "";
+        $scope.alertMsg = "";
+        $scope.username = "";
     }
 
 });
- 
+
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
@@ -29,5 +29,8 @@ app.config(function ($routeProvider) {
         .when("/CreateNewClaim", {
             templateURL: "CreateNewClaim.html"
         })
+        .otherwise({
+            templateURL: "login.html"
+        });
 
-})
+});
