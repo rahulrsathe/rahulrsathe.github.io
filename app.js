@@ -1,4 +1,4 @@
-var app = angular.module('LoginApp', ['ngRoute']);
+var app = angular.module('LoginApp', ['']);
 app.controller('LoginCntrlr', function ($scope) {
  
     $scope.validatepwd = function() {
@@ -22,13 +22,4 @@ app.controller('LoginCntrlr', function ($scope) {
 
 });
  
-app.config(function ($routeProvider) {
-    $routeProvider
-        .when("/", {
-            templateURL: "login.html"
-        })
-        .when("/createNewClaim", {
-            templateURL: "createNewClaim.html"
-        })
-
-}
+  
