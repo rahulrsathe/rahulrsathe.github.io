@@ -9,7 +9,8 @@ app.config(function ($routeProvider) {
             templateUrl : 'createNewClaim.html'
         })
         .otherwise({
-            templateUrl : 'login.html'
+            templateUrl: 'login.html',
+            controller: 'LoginCntrlr'
         });
 });
 
