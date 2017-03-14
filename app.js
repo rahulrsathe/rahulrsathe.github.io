@@ -42,5 +42,5 @@ app.controller('LoginCntrlr', function ($scope) {
 
 
 app.controller('NewClaimCntrlr', function ($scope) {
-    $scope.username = $rootScope.username;
+    $scope.username = 'Test User';
 });
