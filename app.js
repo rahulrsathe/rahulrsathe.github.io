@@ -19,6 +19,9 @@ app.controller('LoginCntrlr', function ($scope) {
 
     $scope.validatepwd = function () {
         if ($scope.pwd == 'boom') {
+            app.run(function ($rootScope) {
+                $rootScope.username = new Date();
+            });
             $scope.pwd = '';
             $scope.alertMsg = 'Good Work remembering your password!';
         }
@@ -39,5 +42,5 @@ app.controller('LoginCntrlr', function ($scope) {
 
 
 app.controller('NewClaimCntrlr', function ($scope) {
-    $scope.userName = $rootScope.username;
+    $scope.username = $rootScope.username;
 });
