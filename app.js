@@ -6,7 +6,8 @@ app.config(function ($routeProvider) {
        //     templateUrl : "login.html"
        // })
         .when('/CreateNewClaim', {
-            templateUrl : 'createNewClaim.html'
+            templateUrl: 'createNewClaim.html',
+            controller: 'NewClaimCntrlr'
         })
         .otherwise({
             templateUrl: 'login.html',
@@ -34,4 +35,9 @@ app.controller('LoginCntrlr', function ($scope) {
         $scope.username = '';
     }
 
+});
+
+
+app.controller('NewClaimCntrlr', function ($scope) {
+    username = $rootScope.username;
 });
