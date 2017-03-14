@@ -20,7 +20,7 @@ app.controller('LoginCntrlr', function ($scope) {
     $scope.validatepwd = function () {
         if ($scope.pwd == 'boom') {
             app.run(function ($rootScope) {
-                $rootScope.username = new Date();
+                $rootScope.username = $scope.username;
             });
             $scope.pwd = '';
             $scope.alertMsg = 'Good Work remembering your password!';
