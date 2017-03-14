@@ -5,7 +5,7 @@ app.config(function ($routeProvider) {
        // .when("/", {
        //     templateUrl : "login.html"
        // })
-        .when('/CreateNewClaim', {
+        .when('/createNewClaim', {
             templateUrl: 'createNewClaim.html',
             controller: 'NewClaimCntrlr'
         })
