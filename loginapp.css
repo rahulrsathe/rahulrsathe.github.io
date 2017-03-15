@@ -24,3 +24,8 @@ p
 .errMsg{
         color:red;
 }
+.navBar {
+    text-align: right;
+    max-width: 300px;
+    margin: 0 auto;
+}

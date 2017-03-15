@@ -1,7 +1,13 @@
-﻿<div>Welcome {{username}}</div>
+﻿<div class="navBar">Welcome <ng-bind="username"></ng-bind></div>
 <div>
-    <div>
-        Select Policy: 
-        <input type="text" ng-model="PolicyNum" />
-    </div>
+    <form name="">
+        <div>
+            <p>
+            Select Policy:
+            <input type="text" name="PolicyNum" ng-model="PolicyNum" ng-required ="!myForm.PolicyNum.$valid"/>
+            <h5 ng-if="!myForm.PolicyNum.$valid">Policy Num Mandatory</h5></p>
+
+        </div>
+    </form>
+    
 </div> 
