@@ -18,19 +18,25 @@ app.config(function ($routeProvider) {
 app.controller('LoginCntrlr', function ($scope) {
 
     $scope.validatepwd = function () {
-        if ($scope.pwd == 'boom') {
-            app.run(function ($rootScope) {
-                $rootScope.username = $scope.username;
-            });
-            $scope.pwd = '';
-            $scope.alertMsg = 'Good Work remembering your password!';
-        }
+        if ($scope.username != '' && $scope.pwd != '' ) {
+            if ($scope.pwd == 'boom') {
+                app.run(function ($rootScope) {
+                    $rootScope.username = $scope.username;
+                });
+                $scope.pwd = '';
+                $scope.alertMsg = 'Good Work remembering your password!';
+            }
 
-        else {
-            $scope.pwd = '';
-            $scope.alertMsg = 'Why do you always forget your password?';
+            else {
+                $scope.pwd = '';
+                $scope.alertMsg = 'Why do you always forget your password?';
+            }
+        } else {
+            $scope.alertMsg = 'Username is mandatory';
+
         }
     }
+    
 
     $scope.reset = function () {
         $scope.pwd = '';
